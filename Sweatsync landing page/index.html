@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweatSync | Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="./assets/logo.jpg" alt="SweatSync Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#early-access" class="cta-nav">Get Early Access</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Ultimate <span>Fitness Accountability</span> Partner</h1>
+                <p class="subheadline">SweatSync is coming soon to revolutionize how you stay committed to your fitness goals. Join our waitlist for exclusive early access and launch discounts.</p>
+                
+                <div class="countdown">
+                    <h3>Launching In:</h3>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <small>Days</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <small>Hours</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <small>Minutes</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <small>Seconds</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <button id="early-access-btn" class="cta-primary">Get Early Access</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="app-preview.png" alt="SweatSync App Preview" class="app-screenshot">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>What Makes SweatSync Different</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Group Accountability</h3>
+                    <p>Stay motivated with friends through shared goals and friendly competition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Verified Check-ins</h3>
+                    <p>Photo verification ensures you're actually at the gym when you say you are.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire-alt"></i>
+                    </div>
+                    <h3>Smart Challenges</h3>
+                    <p>AI-generated challenges tailored to your fitness level and goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About SweatSync</h2>
+                <p>SweatSync was born from the realization that most people struggle with consistency, not knowledge. Our mission is to create the ultimate accountability platform that helps you show up, even when motivation runs low.</p>
+                <p>With cutting-edge behavioral science and gamification, SweatSync makes staying committed to your fitness journey easier and more rewarding than ever before.</p>
+            </div>
+            <div class="about-image">
+                <img src="about-preview.png" alt="About SweatSync">
+            </div>
+        </div>
+    </section>
+
+    <section class="early-access" id="early-access">
+        <div class="container">
+            <h2>Get Exclusive Early Access</h2>
+            <p>Be among the first to experience SweatSync and enjoy special launch discounts.</p>
+            
+            <form id="early-access-form" class="email-form">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-primary">Join Waitlist</button>
+                </div>
+                <p class="form-note">We respect your privacy. Your email will only be used to notify you about SweatSync's launch.</p>
+            </form>
+            
+            <div id="thank-you-message" class="thank-you">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You!</h3>
+                <p>You've been added to our early access list. We'll be in touch soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Collection Modal -->
+    <div id="email-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Get Early Access to SweatSync</h2>
+            <p>Join our exclusive waitlist and be the first to know when we launch. Early subscribers will receive special discounts!</p>
+            <form id="modal-email-form" class="email-form">
+                <div class="form-group">
+                    <input type="email" id="modal-email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="cta-primary">Join Waitlist</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
